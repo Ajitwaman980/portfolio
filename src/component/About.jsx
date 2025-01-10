@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Terminal, Mail, Phone, Linkedin, Github, Eye } from "lucide-react";
+import ProfilePhoto from "../assets/crop 4.jpeg";
 
 const title_devloper = {
   Frontend: "Frontend",
@@ -38,11 +39,11 @@ export const About = () => {
           <div className="flex flex-col gap-3 mb-6">
             <Terminal className="text-green-400" size={32} />
             <h2 className="text-xl font-mono text-green-400">~/developer$</h2>
-            <div className="flex flex-col ">
+            <div className="flex flex-col">
               <span className="text-xl font-mono text-green-400">
                 $ node --version
               </span>
-              <sapn className="text-xl font-mono text-green-400">v22.12.0</sapn>
+              <span className="text-xl font-mono text-green-400">v22.12.0</span>
             </div>
           </div>
           <h1 className="text-4xl font-bold mb-6">
@@ -92,11 +93,11 @@ export const About = () => {
             </a>
           </div>
         </div>
-        <div className="flex-shrink-0">
+        <div className="flex-shrink-0 items-center pt-32">
           <img
-            src="https://images.pexels.com/photos/29988886/pexels-photo-29988886/free-photo-of-solitary-palm-tree-in-misty-kerala-hills.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"
+            src={ProfilePhoto}
             alt="my profile image"
-            className="rounded-full h-80 w-80 mx-auto md:mx-0"
+            className="rounded-full h-80 w-80 object-cover"
           />
         </div>
       </div>
