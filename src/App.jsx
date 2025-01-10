@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./component/navbar";
+import Navbar from "./component/Navbar";
 import Skills from "./component/Skills";
 import Footer from "./component/footer";
 import { About } from "./component/About";
