@@ -70,13 +70,7 @@ export const About = () => {
               <Mail className="text-green-400" size={20} />
               <span>ajitwaman353@gmail.com</span>
             </a>
-            <a
-              href="tel:+917249491259"
-              className="flex items-center gap-2 bg-gray-800 px-4 py-2 rounded-lg hover:bg-gray-700"
-            >
-              <Phone className="text-green-400" size={20} />
-              <span>+91-7249491259</span>
-            </a>
+
             <a
               href="../../public/Ajit Waman Backend New (1).pdf"
               className="flex items-center gap-2 bg-gray-800 px-4 py-2 rounded-lg hover:bg-gray-700"
