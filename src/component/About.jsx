@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Terminal, Mail, Phone, Linkedin, Github, Eye } from "lucide-react";
-import ProfilePhoto from "../assets/crop 4.jpeg";
+import ProfilePhoto from "../assets/me3.jpeg";
 
 const title_devloper = {
   Frontend: "Frontend",
@@ -93,11 +93,11 @@ export const About = () => {
             </a>
           </div>
         </div>
-        <div className="flex-shrink-0 items-center pt-32">
+        <div className="flex-shrink-0 items-center  pt-32">
           <img
             src={ProfilePhoto}
             alt="my profile image"
-            className="rounded-full h-80 w-80 object-cover"
+            className="rounded-full h-80 w-80 object-fill"
           />
         </div>
       </div>

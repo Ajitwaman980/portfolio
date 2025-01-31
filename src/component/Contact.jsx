@@ -20,11 +20,11 @@ const Contact = () => {
           <span className="text-white">ajitwaman353@gmail.com</span>
         </a>
         <a
-          href="tel:+917249491259"
+          href=""
           className="flex items-center gap-2 bg-gray-800 px-4 py-2 rounded-lg hover:bg-gray-700"
         >
           <PhoneIcon className="text-green-400" size={20} />
-          <span className="text-white">+91-7249491259</span>
+          <span className="text-white"></span>
         </a>
         <a
           href="https://github.com/Ajitwaman980"
