@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Terminal, Mail, Phone, Linkedin, Github, Eye } from "lucide-react";
-import ProfilePhoto from "../assets/me3.jpeg";
+import ProfilePhoto from "../assets/newpic.png";
 
 const title_devloper = {
   Frontend: "Frontend",
