@@ -53,6 +53,7 @@ const Skills = () => {
         "Postman",
         "Hoppscotch",
         "Autocannon",
+        "prisma",
         "Docker",
       ],
     },
