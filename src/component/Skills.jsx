@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Database,
-  Server,
-  Code,
-  Terminal,
-  BookOpen,
-  Award,
-} from "lucide-react";
+import { Database, Server, Code } from "lucide-react";
 
 const Skills = () => {
   const sections = [
@@ -42,19 +35,19 @@ const Skills = () => {
       ],
     },
     {
-      title: "Databases & Tools",
+      title: "Databases & Devops",
       icon: <Database size={24} />,
       skills: [
         "MongoDB",
         "MySQL",
+        "PostgreSQL",
         "Git",
         "GitHub",
         "VS Code",
         "Postman",
         "Hoppscotch",
-        "Autocannon",
-        "prisma",
         "Docker",
+        "kubernetes",
       ],
     },
   ];
@@ -67,15 +60,18 @@ const Skills = () => {
           {sections.map((section, index) => (
             <div
               key={index}
-              className="bg-gray-800 p-6 rounded-lg border border-gray-700"
+              className="bg-gray-800 p-6 rounded-lg border border-gray-700 transition-all duration-500 ease-in-out transform hover:scale-105 hover:shadow-xl hover:border-green-500"
             >
               <div className="flex items-center gap-3 mb-4">
                 <div className="text-green-400">{section.icon}</div>
                 <h3 className="text-xl font-semibold">{section.title}</h3>
               </div>
               <ul className="space-y-2">
-                {(section.skills || section.items)?.map((item, i) => (
-                  <li key={i} className="text-gray-300 flex items-center gap-2">
+                {section.skills.map((item, i) => (
+                  <li
+                    key={i}
+                    className="text-gray-300 flex items-center gap-2 transition-all duration-300 hover:text-white"
+                  >
                     <span className="text-green-400">›</span>
                     {item}
                   </li>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Terminal, Mail, Phone, Linkedin, Github, Eye } from "lucide-react";
-import ProfilePhoto from "../assets/newpic.png";
+import ProfilePhoto from "../assets/ajit new .jpeg";
 
 const title_devloper = {
   Frontend: "Frontend",
@@ -68,11 +68,11 @@ export const About = () => {
               className="flex items-center gap-2 bg-gray-800 px-4 py-2 rounded-lg hover:bg-gray-700"
             >
               <Mail className="text-green-400" size={20} />
-              <span>ajitwaman353@gmail.com</span>
+              <span>ajitwaman43@gmail.com</span>
             </a>
 
             <a
-              href="../../public/Ajit Waman Backend New (1).pdf"
+              href="https://drive.google.com/file/d/17bVNcpi5xs9bxmoYMCjma3-WPVzW--5v/view?usp=drive_link"
               className="flex items-center gap-2 bg-gray-800 px-4 py-2 rounded-lg hover:bg-gray-700"
             >
               <Eye className="text-green-400" size={20} />
@@ -87,7 +87,7 @@ export const About = () => {
             </a>
           </div>
         </div>
-        <div className="flex-shrink-0 items-center  pt-32">
+        <div className="flex-shrink-0  items-center  pt-32 ">
           <img
             src={ProfilePhoto}
             alt="my profile image"

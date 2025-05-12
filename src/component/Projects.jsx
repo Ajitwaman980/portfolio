@@ -16,12 +16,31 @@ import imagessaver from "../assets/images.png";
 import EmployeeManagementSystem from "../assets/Employee Management System.jpg";
 import ReactAuthenticationwithbackend from "../assets/React-Authentication-with-backend.png";
 import RoleBasedAuthentication from "../assets/Role-Based Authentication.jpg";
+import medium from "../assets/medium.png";
 const Projects = () => {
   const projects = [
     {
-      title: "Microservices Blog Platform",
+      title: "Medium Clone Backend",
       description:
-        "A scalable blog platform built with microservices architecture, featuring user authentication, post management, and inter-service communication using Kafka.",
+        "This is the backend for a Medium-like blogging platform built using Hono, Prisma, PostgreSQL, and JWT authentication and best Featured is best features is summary generator we used gemini api  ",
+      icon: <Newspaper className="text-green-400" size={24} />,
+      tech: [
+        "Node.js",
+        "Hono.js",
+        "PostgreSQL",
+        "JWT",
+        "Zod",
+        "Prisma ",
+        "Docker",
+        "Gemini AI ",
+      ],
+      github: "https://github.com/Ajitwaman980/Medium-Backend",
+      image: medium,
+    },
+    {
+      title: "KafkaBlog ",
+      description:
+        "KafkaBlog is a backend project that demonstrates microservices communication using Apache Kafka. This project includes two independent services — Auth and Post — each with its own database, communicating asynchronously through Kafka to ensure decoupled, scalable, and maintainable architecture",
       icon: <Newspaper className="text-green-400" size={24} />,
       tech: [
         "Node.js",
@@ -33,7 +52,7 @@ const Projects = () => {
         "Redis",
         "Docker",
       ],
-      github: "https://github.com/Ajitwaman980/Blog-Website-",
+      github: "https://github.com/Ajitwaman980/KafkaBlog-",
       image: blogwebsiteImage,
     },
     {
@@ -145,6 +164,7 @@ const Projects = () => {
             <div key={index} className="rounded-xl bg-gray-800 overflow-hidden">
               <div className="relative h-48">
                 <img
+                  loading="lazy"
                   src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover"
