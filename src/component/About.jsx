@@ -56,11 +56,9 @@ export const About = () => {
           <p className="text-xl text-gray-300 mb-8 font-mono">
             Passionate about{" "}
             <span className="text-green-500">backend development</span>, I enjoy
-            building scalable systems and crafting efficient solutions that
-            solve real-world problems. Skilled in designing robust architectures
-            and optimizing performance, I’m eager to contribute to innovative
-            projects and grow as a developer. Let’s create impactful solutions
-            together.
+            building strong and fast systems that solve real problems. I’m
+            always ready to learn, grow, and work on new ideas that make a
+            difference.
           </p>
           <div className="flex flex-wrap gap-4 mb-8">
             <a
