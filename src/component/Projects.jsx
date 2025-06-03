@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Shield,
   Database,
@@ -8,6 +8,7 @@ import {
   Newspaper,
   Terminal,
   ExternalLink,
+  Send,
 } from "lucide-react";
 import satysimpleImage from "../assets/satysimple.png";
 import blogwebsiteImage from "../assets/blog website.jpg";
@@ -17,12 +18,15 @@ import EmployeeManagementSystem from "../assets/Employee Management System.jpg";
 import ReactAuthenticationwithbackend from "../assets/React-Authentication-with-backend.png";
 import RoleBasedAuthentication from "../assets/Role-Based Authentication.jpg";
 import medium from "../assets/medium.png";
+
 const Projects = () => {
+  const [showProjects, setShowProjects] = useState(false);
+
   const projects = [
     {
       title: "Medium Clone Backend",
       description:
-        "This is the backend for a Medium-like blogging platform built using Hono, Prisma, PostgreSQL, and JWT authentication and best Featured is best features is summary generator we used gemini api  ",
+        "Backend for Medium-style blog with Hono, Prisma, PostgreSQL, JWT. Summary feature using Gemini API.",
       icon: <Newspaper className="text-green-400" size={24} />,
       tech: [
         "Node.js",
@@ -30,17 +34,17 @@ const Projects = () => {
         "PostgreSQL",
         "JWT",
         "Zod",
-        "Prisma ",
+        "Prisma",
         "Docker",
-        "Gemini AI ",
+        "Gemini AI",
       ],
       github: "https://github.com/Ajitwaman980/Medium-Backend",
       image: medium,
     },
     {
-      title: "KafkaBlog ",
+      title: "KafkaBlog",
       description:
-        "KafkaBlog is a backend project that demonstrates microservices communication using Apache Kafka. This project includes two independent services — Auth and Post — each with its own database, communicating asynchronously through Kafka to ensure decoupled, scalable, and maintainable architecture",
+        "Microservices backend with Auth and Post services communicating via Apache Kafka.",
       icon: <Newspaper className="text-green-400" size={24} />,
       tech: [
         "Node.js",
@@ -58,7 +62,7 @@ const Projects = () => {
     {
       title: "Resume Builder",
       description:
-        "Interactive resume builder application with customizable templates, real-time preview, and PDF export functionality.",
+        "Create professional resumes with live preview and export to PDF.",
       icon: <FileText className="text-green-400" size={24} />,
       tech: [
         "React",
@@ -75,7 +79,7 @@ const Projects = () => {
     {
       title: "Role-Based Authentication",
       description:
-        "Secure system with role-based access control for admins and employees. Reduced API response times by 50% using Redis caching.",
+        "Admin/employee access system using Redis for fast token verification.",
       icon: <Shield className="text-green-400" size={24} />,
       tech: [
         "Node.js",
@@ -84,7 +88,7 @@ const Projects = () => {
         "Redis",
         "Mongoose",
         "Bcrypt",
-        "typescript",
+        "TypeScript",
       ],
       github:
         "https://github.com/Ajitwaman980/Role-Based-Authentication-System",
@@ -92,9 +96,9 @@ const Projects = () => {
       image: RoleBasedAuthentication,
     },
     {
-      title: "Image-Saver",
+      title: "Image Saver",
       description:
-        "Web application for managing profile images with secure authentication, image uploading, updating, and deletion. Increased performance by 60% using caching.",
+        "Image management system with upload/edit/delete, caching, and authentication.",
       icon: <Database className="text-green-400" size={24} />,
       tech: [
         "Node.js",
@@ -106,13 +110,13 @@ const Projects = () => {
         "NodeCache",
       ],
       github: "https://github.com/Ajitwaman980/ImageSaver-",
-      demo: " https://imagesaver-z1w2.onrender.com",
+      demo: "https://imagesaver-z1w2.onrender.com",
       image: imagessaver,
     },
     {
       title: "Stay-simple",
       description:
-        "Scalable rental management system with secure login, schema validation, and image management. Features MVC architecture and responsive UI.",
+        "Room rental app with secure login, image uploads, validation, and email support.",
       icon: <Home className="text-green-400" size={24} />,
       tech: [
         "Node.js",
@@ -123,7 +127,7 @@ const Projects = () => {
         "Redis",
         "Docker",
         "EJS",
-        "nodemailer",
+        "Nodemailer",
         "Tailwind CSS",
       ],
       github: "https://github.com/Ajitwaman980/stayHome",
@@ -133,17 +137,16 @@ const Projects = () => {
     {
       title: "Employee Management System",
       description:
-        "C++ based system for efficient employee data management with CRUD operations and secure authentication.",
+        "C++ console CRUD system with login and object-oriented design.",
       icon: <Terminal className="text-green-400" size={24} />,
-      tech: ["C++", "Data Structures", "oops"],
+      tech: ["C++", "Data Structures", "OOP"],
       github: "https://github.com/Ajitwaman980/Employee-Management-System",
-
       image: EmployeeManagementSystem,
     },
     {
-      title: "React-Authentication-with-backend",
+      title: "React Auth (with Backend)",
       description:
-        "React-based authentication system with a backend for secure user login, registration, and session management.",
+        "Full-stack React login/register app using Node.js + MongoDB.",
       icon: <Terminal className="text-green-400" size={24} />,
       tech: ["React", "Node.js", "Express", "MongoDB", "JWT", "Bcrypt"],
       github:
@@ -154,65 +157,94 @@ const Projects = () => {
   ];
 
   return (
-    <div id="projects" className="py-20 bg-gray-900 text-white">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12">
-          Featured <span className="text-green-400">Projects</span>
-        </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
-            <div key={index} className="rounded-xl bg-gray-800 overflow-hidden">
-              <div className="relative h-48">
-                <img
-                  loading="lazy"
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-
-              <div className="p-6">
-                <div className="flex items-center gap-3 mb-3">
-                  {project.icon}
-                  <h3 className="text-xl font-bold">{project.title}</h3>
-                </div>
-
-                <p className="text-gray-300 text-sm mb-4">
-                  {project.description}
-                </p>
-
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tech.map((tech, i) => (
-                    <span
-                      key={i}
-                      className="px-2 py-1 bg-gray-700 text-green-400 text-xs rounded-full font-mono"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-
-                <div className="flex gap-4">
-                  <a
-                    href={project.github}
-                    className="flex items-center gap-2 text-sm text-gray-300 hover:text-green-400 transition-colors"
-                  >
-                    <Github size={16} />
-                    Code
-                  </a>
-                  <a
-                    href={project.demo}
-                    className="flex items-center gap-2 text-sm text-gray-300 hover:text-green-400 transition-colors"
-                  >
-                    <ExternalLink size={16} />
-                  </a>
-                </div>
-              </div>
-            </div>
-          ))}
+    <section
+      id="projects"
+      className="py-8 bg-gray-900 text-white font-mono mb-10"
+    >
+      <div className="container mx-auto max-w-6xl">
+        <div className="flex flex-col items-center justify-center text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+            My <span className="text-green-400">Projects</span>
+          </h2>
+          <div className="flex items-center gap-2 bg-gray-800 px-4 py-2 rounded-md border border-green-500 max-w-md w-full">
+            <input
+              type="text"
+              readOnly
+              value="GET ajitwaman/Projects"
+              className="bg-transparent text-green-400 text-sm sm:text-lg w-full outline-none font-mono"
+            />
+            <button onClick={() => setShowProjects(true)}>
+              <Send size={20} className="text-green-400" />
+            </button>
+          </div>
         </div>
+
+        {showProjects && (
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+            {projects.map((project, index) => (
+              <div
+                key={index}
+                className="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-green-400 hover:shadow-lg transition-all"
+              >
+                <div className="h-48 w-full relative">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div className="p-6">
+                  <div className="flex items-center gap-3 mb-3">
+                    {project.icon}
+                    <h3 className="text-xl font-bold">{project.title}</h3>
+                  </div>
+
+                  <p className="text-gray-300 text-sm mb-4">
+                    {project.description}
+                  </p>
+
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.tech.map((tech, i) => (
+                      <span
+                        key={i}
+                        className="px-2 py-1 bg-gray-700 text-green-400 text-xs rounded-full font-mono"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+
+                  <div className="flex gap-4 text-sm">
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-gray-300 hover:text-green-400 transition-colors"
+                    >
+                      <Github size={16} />
+                      Code
+                    </a>
+                    {project.demo && (
+                      <a
+                        href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-gray-300 hover:text-green-400 transition-colors"
+                      >
+                        <ExternalLink size={16} />
+                        Demo
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
-    </div>
+    </section>
   );
 };
 

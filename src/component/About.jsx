@@ -32,34 +32,36 @@ export const About = () => {
   return (
     <div
       id="about"
-      className="pt-10 px-4 min-h-[340px] flex items-center bg-gray-900 text-white"
+      className="pt-3 px-4 min-h-[340px] flex items-center bg-gray-900 text-white "
     >
       <div className="mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="max-w-3xl mb-8 md:mb-0">
-          <div className="flex flex-col gap-3 mb-6">
-            <Terminal className="text-green-400" size={32} />
+          <div className="flex flex-col gap-3 mb-6 ">
+            <Terminal className="text-green-400  " size={32} />
+
             <h2 className="text-xl font-mono text-green-400">~/developer$</h2>
             <div className="flex flex-col">
               <span className="text-xl font-mono text-green-400">
                 $ node --version
               </span>
-              <span className="text-xl font-mono text-green-400">v22.12.0</span>
+              <span className="text-xl font-mono text-green-400">v22.12.3</span>
             </div>
           </div>
-          <h1 className="text-4xl font-bold mb-6">
-            Hello, I’m <span className="text-green-400">Ajit Waman</span>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 ">
+            Hello, I’m <span className="text-green-400">Ajit waman</span>
             <span className="text-blue-400">
               {" "}
               {currentDevloperAbout} Developer
             </span>
           </h1>
-          <p className="text-xl text-gray-300 mb-8 font-mono">
-            Passionate about{" "}
-            <span className="text-green-500">backend development</span>, I enjoy
-            building strong and fast systems that solve real problems. I’m
-            always ready to learn, grow, and work on new ideas that make a
-            difference.
+          <p className="text-xl text-gray-300 mb-8 font-mono sm:text-2xl">
+            Backend developer focused on building scalable, secure systems with
+            tools like <span className="text-blue-300">Node.js</span>,{" "}
+            <span className="text-blue-300">Express</span>, and{" "}
+            <span className="text-blue-300">Express</span>. Always learning,
+            always improving.
           </p>
+
           <div className="flex flex-wrap gap-4 mb-8">
             <a
               href="mailto:ajitwaman353@gmail.com"
@@ -85,7 +87,7 @@ export const About = () => {
             </a>
           </div>
         </div>
-        <div className="flex-shrink-0  items-center  pt-32 ">
+        <div className="flex-shrink-0  items-center  pt-20 sm: h-100 ">
           <img
             src={ProfilePhoto}
             alt="my profile image"
@@ -96,3 +98,5 @@ export const About = () => {
     </div>
   );
 };
+
+export default About;

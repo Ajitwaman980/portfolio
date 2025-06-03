@@ -11,7 +11,7 @@ const Contact = () => {
         Contact <span className="text-green-400">Information</span>
       </h3>
 
-      <div className="flex flex-wrap justify-center gap-4 mb-8">
+      <div className="flex flex-wrap justify-evenly gap-3 mb-8">
         <a
           href="mailto:ajitwaman353@gmail.com"
           className="flex items-center gap-2 bg-gray-800 px-4 py-2 rounded-lg hover:bg-gray-700"
@@ -19,13 +19,13 @@ const Contact = () => {
           <Mail className="text-green-400" size={20} />
           <span className="text-white">ajitwaman353@gmail.com</span>
         </a>
-        <a
+        {/* <a
           href=""
           className="flex items-center gap-2 bg-gray-800 px-4 py-2 rounded-lg hover:bg-gray-700"
         >
           <PhoneIcon className="text-green-400" size={20} />
           <span className="text-white"></span>
-        </a>
+        </a> */}
         <a
           href="https://github.com/Ajitwaman980"
           className="flex items-center gap-2 bg-gray-800 px-4 py-2 rounded-lg hover:bg-gray-700"
