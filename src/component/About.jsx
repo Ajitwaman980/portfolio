@@ -3,10 +3,10 @@ import { Terminal, Mail, Phone, Linkedin, Github, Eye } from "lucide-react";
 import ProfilePhoto from "../assets/my github profile.jpg";
 
 const title_devloper = {
-  Frontend: "Frontend",
-  Backend: "Backend",
+  Frontend: "Frontend dev ",
+  Backend: "Backend dev",
   FullStack: "FullStack",
-  Newskill: "I'm learning blockchain",
+  Newskill: "learning blockchain",
 };
 
 export const About = () => {
