@@ -27,7 +27,7 @@ function Navbar() {
   }, []);
 
   return (
-    <header className="bg-gray-800 text-white w-full shadow-md">
+    <header className="bg-gray-800 fixed text-white w-full shadow-md  mb-4 ">
       <div className="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
         <div className="flex items-center gap-2">
           <Terminal size={20} className="text-green-400" />

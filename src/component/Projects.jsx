@@ -166,6 +166,9 @@ const Projects = () => {
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">
             My <span className="text-green-400">Projects</span>
           </h2>
+          <p className="text-gray-500 mb-6">
+            Click on a project to explore the details.
+          </p>
           <div className="flex items-center gap-2 bg-gray-800 px-4 py-2 rounded-md border border-green-500 max-w-md w-full">
             <input
               type="text"

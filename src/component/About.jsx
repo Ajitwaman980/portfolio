@@ -3,10 +3,9 @@ import { Terminal, Mail, Phone, Linkedin, Github, Eye } from "lucide-react";
 import ProfilePhoto from "../assets/my github profile.jpg";
 
 const title_devloper = {
-  Frontend: "Frontend dev ",
-  Backend: "Backend dev",
+  Frontend: "Frontend  ",
+  Backend: "Backend ",
   FullStack: "FullStack",
-  Newskill: "learning blockchain",
 };
 
 export const About = () => {
@@ -23,16 +22,16 @@ export const About = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       randomTitle();
-    }, 6000);
+    }, 4000);
     return () => {
       clearInterval(interval);
     };
-  }, []);
+  });
 
   return (
     <div
       id="about"
-      className="pt-3 px-4 min-h-[340px] flex items-center bg-gray-900 text-white "
+      className="pt-16 px-4  min-h-[340px] flex items-center bg-gray-900 text-white "
     >
       <div className="mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="max-w-3xl mb-8 md:mb-0">

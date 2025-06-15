@@ -1,10 +1,10 @@
 import React from "react";
-import Navbar from "./component/Navbar";
+import Navbar from "./component/navbar";
 import Skills from "./component/Skills";
 import Footer from "./component/Footer";
 import { About } from "./component/About";
 import Projects from "./component/Projects";
-import Contact from "./component/Contact";
+import Contact from "./component/contact";
 
 export default function App() {
   return (

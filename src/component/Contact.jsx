@@ -8,10 +8,10 @@ const Contact = () => {
         id="contact"
         className="text-4xl  font-bold text-center text-white mb-12"
       >
-        Contact <span className="text-green-400">Information</span>
+        Get In Touch
       </h3>
 
-      <div className="flex flex-wrap justify-evenly gap-3 mb-8">
+      <div className="flex flex-wrap justify-around gap-2 mb-8">
         <a
           href="mailto:ajitwaman353@gmail.com"
           className="flex items-center gap-2 bg-gray-800 px-4 py-2 rounded-lg hover:bg-gray-700"
