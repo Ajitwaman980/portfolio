@@ -7,7 +7,7 @@ const title_devloper = {
   FullStack: "FullStack",
 };
 
-function Navbar() {
+function navbar() {
   const [currentDevlopertitle, setCurrentDevlopertitle] = useState(
     title_devloper.Backend
   );
@@ -105,4 +105,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default navbar;
