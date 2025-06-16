@@ -6,7 +6,7 @@ const title_devloper = {
   Backend: "Backend",
   FullStack: "FullStack",
 };
-
+// NAVBAR this is navbar
 function Navbar() {
   const [currentDevlopertitle, setCurrentDevlopertitle] = useState(
     title_devloper.Backend
