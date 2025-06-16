@@ -1,15 +1,15 @@
 import React from "react";
-import navbar from "./component/navbar";
-import Skills from "./component/Skills";
-import Footer from "./component/Footer";
-import { About } from "./component/About";
-import Projects from "./component/Projects";
-import Contact from "./component/contact";
+import Navbar from "./components/navbar";
+import Skills from "./components/Skills";
+import Footer from "./components/Footer";
+import { About } from "./components/About";
+import Projects from "./components/Projects";
+import Contact from "./components/contact";
 
 export default function App() {
   return (
     <div className="min-h-screen bg-gray-900 text-white overflow-x-hidden">
-      <navbar />
+      <Navbar />
       <main className="px-4 sm:px-6 md:px-8 max-w-7xl mx-auto">
         <About />
         <Skills />
