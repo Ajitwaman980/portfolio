@@ -11,22 +11,33 @@ import {
   Send,
 } from "lucide-react";
 import satysimpleImage from "../assets/satysimple.png";
-import blogwebsiteImage from "../assets/blog website.jpg";
+import blogwebsiteImage from "../assets/blog website .png";
 import resumeImage from "../assets/resume.jpg";
 import imagessaver from "../assets/images.png";
 import EmployeeManagementSystem from "../assets/Employee Management System.jpg";
 import ReactAuthenticationwithbackend from "../assets/React-Authentication-with-backend.png";
 import RoleBasedAuthentication from "../assets/Role-Based Authentication.jpg";
 import medium from "../assets/medium.png";
+import BookRentalIIMG from "../assets/Bookrental.png";
 
 const Projects = () => {
   const [showProjects, setShowProjects] = useState(false);
 
   const projects = [
     {
+      title: "Book Rental Backend",
+      description:
+        "The Book Rental API is a production-grade RESTful backend built with Node.js, Express.js, and MongoDB. It provides a complete system for user authentication, book listing, and book rental management. Designed with real-world use cases in mind, this API simulates a scalable and secure online book rental platform.",
+      icon: <Newspaper className="text-green-400" size={24} />,
+      tech: ["Node.js", "Express", "MongoDB", "JWT", "Bcrypt"],
+      github: "https://github.com/Ajitwaman980/BookShop",
+      demo: "https://github.com/Ajitwaman980/BookShop",
+      image: BookRentalIIMG,
+    },
+    {
       title: "Medium Clone Backend",
       description:
-        "Backend for Medium-style blog with Hono, Prisma, PostgreSQL, JWT. Summary feature using Gemini API.",
+        "This is the backend for a Medium-like blogging platform built using Hono, Prisma, PostgreSQL, and JWT authentication. Integrated Google Gemini API to provide AI-generated content summaries.",
       icon: <Newspaper className="text-green-400" size={24} />,
       tech: [
         "Node.js",
@@ -42,9 +53,9 @@ const Projects = () => {
       image: medium,
     },
     {
-      title: "KafkaBlog",
+      title: "KafkaBlog Backend",
       description:
-        "Microservices backend with Auth and Post services communicating via Apache Kafka.",
+        "KafkaBlog is a backend project that demonstrates microservices communication using Apache Kafka. This project includes two independent services — Auth and Post — each with its own database, communicating asynchronously through Kafka to ensure decoupled, scalable, and maintainable architecture.",
       icon: <Newspaper className="text-green-400" size={24} />,
       tech: [
         "Node.js",
@@ -60,7 +71,7 @@ const Projects = () => {
       image: blogwebsiteImage,
     },
     {
-      title: "Resume Builder",
+      title: "Resume Builder Backend",
       description:
         "Create professional resumes with live preview and export to PDF.",
       icon: <FileText className="text-green-400" size={24} />,
@@ -77,7 +88,7 @@ const Projects = () => {
       image: resumeImage,
     },
     {
-      title: "Role-Based Authentication",
+      title: "Role-Based Authentication Backend ",
       description:
         "Admin/employee access system using Redis for fast token verification.",
       icon: <Shield className="text-green-400" size={24} />,
@@ -96,7 +107,7 @@ const Projects = () => {
       image: RoleBasedAuthentication,
     },
     {
-      title: "Image Saver",
+      title: "Image Saver Backend + Frontend",
       description:
         "Image management system with upload/edit/delete, caching, and authentication.",
       icon: <Database className="text-green-400" size={24} />,
@@ -114,9 +125,9 @@ const Projects = () => {
       image: imagessaver,
     },
     {
-      title: "Stay-simple",
+      title: "Stay-simple Backend + Frontend",
       description:
-        "Room rental app with secure login, image uploads, validation, and email support.",
+        "Built a production-ready property booking system with user authentication, image uploads, and listing management.",
       icon: <Home className="text-green-400" size={24} />,
       tech: [
         "Node.js",
@@ -135,7 +146,7 @@ const Projects = () => {
       image: satysimpleImage,
     },
     {
-      title: "Employee Management System",
+      title: "Employee Management System C++",
       description:
         "C++ console CRUD system with login and object-oriented design.",
       icon: <Terminal className="text-green-400" size={24} />,
@@ -144,7 +155,7 @@ const Projects = () => {
       image: EmployeeManagementSystem,
     },
     {
-      title: "React Auth (with Backend)",
+      title: "React Auth  Backend + Frontend",
       description:
         "Full-stack React login/register app using Node.js + MongoDB.",
       icon: <Terminal className="text-green-400" size={24} />,

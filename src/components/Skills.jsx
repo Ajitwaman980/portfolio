@@ -11,12 +11,12 @@ const Skills = () => {
       skills: [
         "Node.js",
         "Express.js",
+        "Hono",
         "REST API",
         "Authentication",
         "Authorization",
         "Passport.js",
         "JWT",
-
         "Redis",
         "Microservices",
         "Kafka",
