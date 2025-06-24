@@ -48,17 +48,14 @@ export const About = () => {
           </div>
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 ">
             Hello, I’m <span className="text-green-400">Ajit waman</span>
-            <span className="text-blue-400">
-              {" "}
-              {currentDevloperAbout} Developer
-            </span>
+            <span className="text-blue-400"> Backend Developer</span>
           </h1>
           <p className="text-xl text-gray-300 mb-8 font-mono sm:text-2xl">
             Backend developer focused on building scalable, secure systems with
             tools like <span className="text-blue-300">Node.js</span>,{" "}
             <span className="text-blue-300">Express</span>, and{" "}
-            <span className="text-blue-300">Express</span>. Always learning,
-            always improving.
+            <span className="text-blue-300">Express, Hono </span>. Always
+            learning, always improving.
           </p>
 
           <div className="flex flex-wrap gap-4 mb-8">
