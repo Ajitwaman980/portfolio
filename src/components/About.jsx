@@ -68,7 +68,7 @@ export const About = () => {
             </a>
 
             <a
-              href="https://drive.google.com/file/d/17bVNcpi5xs9bxmoYMCjma3-WPVzW--5v/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1wgDb2il44ay0ye78o5vlquA1GHF8NJOX/view?usp=sharing"
               className="flex items-center gap-2 bg-gray-800 px-4 py-2 rounded-lg hover:bg-gray-700"
             >
               <Eye className="text-green-400" size={20} />
